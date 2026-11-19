@@ -29,7 +29,7 @@ df = load_data()
 df.loc[df['Date'].dt.month == 10, 'Total_kWh_Used'] *= 0.75 # Apply ECM
 baseline_data = df[df['Date'].dt.month < 10]
 ecm_data = df[df['Date'].dt.month == 10]
-features = ['Temp_C', 'Humidity_Pct', 'Occupancy', 'Hour', 'Is_Weekend', 'Day_of_Week']
+features = ['Temp_C', 'Occupancy', 'Hour', 'Is_Weekend', 'Day_of_Week']
 
 # PECAHKAN DATA BASELINE UNTUK METRIK
 X_base = baseline_data[features]
