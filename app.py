@@ -95,7 +95,7 @@ m_col3.info(f"**RMSE:** {rmse_xgb:.4f} kWh")
 plot_data_xgb = ecm_data.head(168)
 fig_xgb = px.line(plot_data_xgb, x='Date', y=['Total_kWh_Used', 'Predicted_Baseline_XGB'],
               labels={'value': 'Energy (kWh)', 'variable': 'Legend'},
-              title="Baseline vs Actual Usage (XGBoost - First 7 Days of Oct)",
+              title="Baseline vs Actual Usage (XGBoost - First 7 Days of Nov)",
               color_discrete_sequence=['#00CC96', '#EF553B'])
 st.plotly_chart(fig_xgb, use_container_width=True)
 
@@ -119,7 +119,7 @@ m_col3_rf.info(f"**RMSE:** {rmse_rf:.4f} kWh")
 plot_data_rf = ecm_data.head(168)
 fig_rf = px.line(plot_data_rf, x='Date', y=['Total_kWh_Used', 'Predicted_Baseline_RF'],
               labels={'value': 'Energy (kWh)', 'variable': 'Legend'},
-              title="Baseline vs Actual Usage (Random Forest - First 7 Days of Oct)",
+              title="Baseline vs Actual Usage (Random Forest - First 7 Days of Nov)",
               color_discrete_sequence=['#00CC96', '#AB63FA']) # Warna ungu untuk RF
 st.plotly_chart(fig_rf, use_container_width=True)
 
