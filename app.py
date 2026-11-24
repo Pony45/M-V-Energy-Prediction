@@ -12,6 +12,15 @@ st.set_page_config(page_title="AI Energy M&V Dashboard", layout="wide")
 st.title("⚡ AI Energy Measurement & Verification (M&V)")
 st.markdown("**Project:** Predicting Energy Saving using IPMVP Option C based on AI Techniques")
 
+# Tambah maklumat diri kau di sini
+st.markdown("""
+<div style='background-color: #1E1E1E; padding: 15px; border-radius: 10px; margin-bottom: 20px;'>
+    <p style='margin: 0; font-size: 18px; color: #FFFFFF;'><b>Student Name:</b> Muhamad Zaim Nazif Bin Mukharita</p>
+    <p style='margin: 0; font-size: 16px; color: #A0A0A0;'><b>Matric No:</b> B112310328</p>
+    <p style='margin: 0; font-size: 16px; color: #A0A0A0;'><b>University:</b> Universiti Teknikal Malaysia Melaka (UTeM)</p>
+</div>
+""", unsafe_allow_html=True)
+
 # 2. LOAD & PROCESS DATA
 @st.cache_data
 def load_data():
